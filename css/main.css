@@ -1,0 +1,40 @@
+
+body {
+    background-color: rgb(124, 147, 153);
+    margin: 0;
+}
+
+a {
+    font-size: 30px;
+    display: flex;
+    /* justify-content: ; */
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+
+}
+
+.logo {
+    display: flex;
+    width: 250px;
+    display: flex;
+}
+
+ul {
+    padding: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+li {
+    list-style: none;
+    
+}
+
+nav {
+    padding: 20px 0px;
+    background-color: rgb(255, 98, 0);
+    display: flex;
+    width: 100%;
+}
