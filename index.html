@@ -4,17 +4,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bleiker quiz</title>
     <link rel="stylesheet" href="../css/main.css" />
+    <script src="./js/script.js" defer></script>
   </head>
 
   <body>
+
+
+
     <nav>
       <ul>
-        <li><a href="./index.html"> <img src="./img/logo.png" class="logo" alt="" /></li>
-        <li><a href="./html/grafisk.html"> Grafisk </a></li>
-        <li><a href="./html/grafisk.html"> Quiz </a></li>
-        <li><a href="./html/grafisk.html"> Video </a></li>
-        <li><a href="./html/grafisk.html"> SoMe </a></li>
+        <li>
+          <a href="./index.html">
+          <img src="./img/logoo.png" class="logo" alt=""/></a>
+        </li>
+        <li><a class="inav" href="./html/grafisk.html"> Grafisk </a></li>
+        <li><a class="inav" href="./html/quiz.html"> Quiz </a></li>
+        <li><a class="inav" href="./html/video.html"> Video </a></li>
+        <li><a class="inav" href="./html/some.html"> SoMe </a></li>
       </ul>
     </nav>
+
+<button id="mute-btn">Mute music</button>
+
+<audio id="bg-music" autoplay loop>
+  <source src="music/Menu_music.mp3" type="audio/mpeg">
+</audio>
+
+
+    <section class="hero">
+      <div id="text">
+        <h1>Velkommen til Bleiker Quizzen</h1>
+      </div>
+
+      <div id="text2">
+        <h2>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </h2>
+      </div>
+
+      <div id="gs">
+         <a class="goto" href="./html/quiz.html">Go to Quiz</a>
+        <a class="vid" href="./html/some.html">Se video</a>
+      </div>
+    </section>
+
+    <div id="section1">
+      <div>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum is simply dummy text of the printing and
+          typesetting industry.
+        </p>
+    <button class="klikk">KLIKK</button>
+      </div>
+      <div>
+        <img class="imgSection" width="400px" src="./img/logo.png" alt=""/></div>
+    </div>
+        <div>
+        
+      </div>
+    </section>
+ 
+    <div id="section2">
+      <div>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum is simply dummy text of the printing and
+          typesetting industry.
+        </p>
+       <button class="klikk">KLIKK</button>
+      </div>
+    </div>
+    
+       <footer>
+   <div><img src="./img/logoo.png" class="logo" alt=""></div>
+   <div id="mby">Laget av Aksel</div>
+   <div><a href="mailto:aksel@afk.no">aksel@afk.no</a></div>
+       </footer>
   </body>
 </html>

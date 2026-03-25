@@ -1,40 +1,299 @@
-
 body {
-    background-color: rgb(124, 147, 153);
-    margin: 0;
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at 50% 30%, #23313f, #010a1d 80%);
+  position: relative;
+}
+
+body::after {
+  transition: 0.5s ease;
+}
+
+body:hover::after {
+  transform: translateX(-50%) scale(1.1);
+}
+
+
+#text {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+}
+
+#text2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.hero {
+
+}
+
+.footer {
+  background-color: #222;
+}
+
+#mby{
+  font-size: 32.5px;
+}
+
+p {
+    font-size: 35px;
+    width: 600px;
+    margin-left: 30px;
+    font-family: "Comic";
+    border-radius: 12px;
+    padding: 30px;
+    background: rgba(134, 134, 134, 0.232);
+    color: #ffffff;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.2);
+}
+
+.klikk{
+    font-size: 30px;
+    display: flex; 
+    margin-left: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(221, 221, 218);
+    font-family: "CarterOne";
+}
+
+.klikk:hover{
+transform: scale(1.15);
+  transition: 0.2s;
+}
+
+
+
+h1 {
+  color: rgb(255, 208, 0);
+  font-size: 70px;
+  width: 640px;
+  font-family: "CarterOne";
+  font-size: 80px;            
+  font-weight: bold;
+  color: #ffd000;               
+  -webkit-text-stroke: 3px black; 
+  margin-top: -50px;
+  margin-bottom: 80px;
+}
+
+h2 {
+  color: white;
+  font-size: 35px;
+  width: 600px;
+  font-family: "Comic";
+  background: rgba(105, 105, 105, 0.169);
+  color: #ffffff;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255,255,255,0.2);
+  border-radius: 12px;
+  padding: 30px;
+  margin-top: -20px;
 }
 
 a {
-    font-size: 30px;
+    font-size: 35px;
     display: flex;
-    /* justify-content: ; */
     text-decoration: none;
     color: black;
     font-weight: 600;
+    font-family: "SchoolBell";
+    /* padding: 10px 120px; */
+}
 
+
+.inav{
+    transition: 0.2s;
+}
+
+.inav:hover{
+   transform: scale(1.20);
 }
 
 .logo {
-    display: flex;
-    width: 250px;
-    display: flex;
+  display: flex;
+  width: 250px;
+  margin-left: -150px;
+  margin-top: 10px;
+  transition: 0.5s;
 }
 
-ul {
-    padding: 0;
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    align-items: center;
+.logo:hover{
+    transform: scale(1.12);
+  transition: 0.2s;
 }
+
+.logoo {
+  display: flex;
+  width: 200px;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+
+ul {
+  padding: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 li {
-    list-style: none;
-    
+  list-style: none;
 }
 
 nav {
-    padding: 20px 0px;
-    background-color: rgb(255, 98, 0);
+  padding: 0px 0px;
+  background-color: rgb(209, 214, 220);
+  display: flex;
+  width: 100%;
+  font-family: "CarterOne";
+}
+
+
+    #mute-btn {
+      padding: 12px 20px;
+      font-size: 16px;
+      background: #222;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 30px;
+      margin-left: 45px;
+    }
+
+
+    #mute-btn:hover {
+      background: #444;
+    }
+
+#gs {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 10px;
+}
+
+.goto:hover{
+  transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(250, 204, 21, 0.4);
+}
+
+.goto{
+  width: 120px;
+  padding: 12px;
+  background-color: #FFD000;
+  color: black;
+  transform: translateY(-3px);
+  border: 2px solid black;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 0 black;
+  justify-self: center;
+}
+
+.vid{
+  width: 130px;
+  padding: 12px;
+  background-color: #FFD000;
+  color: black;
+  transform: translateY(-3px);
+  border: 2px solid black;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.2s;
+  display: flex;
+  align-items: center; 
+  justify-self: center;
+  box-shadow: 0 4px 0 black;
+}
+
+.vid:hover {
+  transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(250, 204, 21, 0.4);
+}
+
+.vid:active{
+  transform: translateY(2px);
+}
+
+#section1 {
+   margin-left: -15px;
     display: flex;
     width: 100%;
+    justify-content: space-between;
+    /* padding: 0px 300px; */
+}
+
+
+#section2 {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+#section2 div {
+    padding: 50px 200px;
+}
+
+
+footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+  background: #0f172a;
+  color: white;
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+  height: 370px;
+  align-items: center;
+  font-family: "Schoolbell";
+}
+
+#mby{
+  box-shadow: 0 2px 0 2px black;
+  background-color: #FFD000;
+  border-radius: 2px;
+  cursor: pointer;
+  padding: 8px;
+  transition: 0.2s;
+}
+
+
+
+#mby:hover{
+  transform: scale(1.10);
+  transition: 0.3s;
+}
+
+@font-face {
+    font-family: "SchoolBell";
+    src: url("../fonts/Schoolbell/Schoolbell-Regular.ttf");
+}
+@font-face {
+    font-family: "CarterOne";
+    src: url("../fonts/Schoolbell/Carter_One/CarterOne-Regular.ttf");
+}
+
+@font-face{
+    font-family: "Chewy";
+    src: url("../fonts/Schoolbell/Chewy/Chewy-Regular.ttf");
+}
+
+@font-face{
+    font-family: "Comic";
+    src: url("../fonts/Schoolbell/Comic_Relief/ComicRelief-Regular.ttf");
 }
