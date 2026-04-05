@@ -1,86 +1,74 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bleiker quiz</title>
-    <link rel="stylesheet" href="../css/main.css" />
-    <script src="./js/script.js" defer></script>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bleiker Quizzen</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
 
-  <body>
+<nav class="navbar">
+  <img src="./img/logoo.png" class="logo">
+  <div class="nav-links">
+    <a href="./html/grafisk.html">Grafisk</a>
+    <a href="./html/quiz.html">Quiz</a>
+    <a href="./html/video.html">Video</a>
+    <a href="./html/some.html">SoMe</a>
+  </div>
+</nav>
 
+<section class="hero">
+  <h1>Velkommen til<br>Bleiker Quizzen</h1>
+  <div class="card">
+    En quiz med spørsmål for en ver avdeling på Bleiker vgs!
+  </div>
+  <div class="buttons">
 
+  </div>
+</section>
 
-    <nav>
-      <ul>
-        <li>
-          <a href="./index.html">
-          <img src="./img/logoo.png" class="logo" alt=""/></a>
-        </li>
-        <li><a class="inav" href="./html/grafisk.html"> Grafisk </a></li>
-        <li><a class="inav" href="./html/quiz.html"> Quiz </a></li>
-        <li><a class="inav" href="./html/video.html"> Video </a></li>
-        <li><a class="inav" href="./html/some.html"> SoMe </a></li>
-      </ul>
-    </nav>
+<section class="promo-section">
 
-<button id="mute-btn">Mute music</button>
-
-<audio id="bg-music" autoplay loop>
-  <source src="music/Menu_music.mp3" type="audio/mpeg">
-</audio>
-
-
-    <section class="hero">
-      <div id="text">
-        <h1>Velkommen til Bleiker Quizzen</h1>
-      </div>
-
-      <div id="text2">
-        <h2>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.
-        </h2>
-      </div>
-
-      <div id="gs">
-         <a class="goto" href="./html/quiz.html">Go to Quiz</a>
-        <a class="vid" href="./html/some.html">Se video</a>
-      </div>
-    </section>
-
-    <div id="section1">
-      <div>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum is simply dummy text of the printing and
-          typesetting industry.
-        </p>
-    <button class="klikk">KLIKK</button>
-      </div>
-      <div>
-        <img class="imgSection" width="400px" src="./img/logo.png" alt=""/></div>
+  <div class="promo-card">
+    <div class="promo-text">
+      <span class="promo-tag">Quiz</span>
+      <h2>Ta quizzen!</h2>
+      <p>Test kunnskapen din om Bleiker vgs med vår quiz.</p>
+      <a href="./html/quiz.html"><button class="promo-btn">Start quiz</button></a>
     </div>
-        <div>
-        
-      </div>
-    </section>
- 
-    <div id="section2">
-      <div>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum is simply dummy text of the printing and
-          typesetting industry.
-        </p>
-       <button class="klikk">KLIKK</button>
-      </div>
+  </div>
+
+  <div class="promo-card">
+    <div class="promo-icon"></div>
+    <div class="promo-text">
+      <span class="promo-tag">Video</span>
+      <h2>Se vår video</h2>
+      <a href="./html/video.html"><button class="promo-btn">Se video</button></a>
     </div>
-    
-       <footer>
-   <div><img src="./img/logoo.png" class="logo" alt=""></div>
-   <div id="mby">Laget av Aksel</div>
-   <div><a href="mailto:aksel@afk.no">aksel@afk.no</a></div>
-       </footer>
-  </body>
-</html>
+  </div>
+
+  <div class="promo-card">
+    <div class="promo-text">
+      <span class="promo-tag">Grafisk profil</span>
+      <h2>Se vår grafiske profil</h2>
+      <p>Farger, logo og designvalg vi har brukt i dette prosjektet.</p>
+      <a href="./html/grafisk.html"><button class="promo-btn">Se grafisk profil</button></a>
+    </div>
+  </div>
+
+</section>
+
+<footer class="footer">
+  <div class="footer-left">
+
+    <span class="footer-brand">Bleiker Quizzen</span>
+  </div>
+  <p class="footer-copy">Laget av Aksel — © 2026 Bleiker Quizzen.</p>
+  <div class="footer-right">
+    <a href="mailto:akselgame@afk.no">akselgame@afk.no</a>
+  </div>
+</footer>
+
+</body>

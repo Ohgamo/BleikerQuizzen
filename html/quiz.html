@@ -1,26 +1,100 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="no">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
-    <link rel="stylesheet" href="../css/main.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bleiker Quizzen</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/quiz.css">
 </head>
 <body>
+ 
+  <nav class="navbar">
+    <a href="../index.html">
+      <img src="../img/logoo.png" class="logo" alt="logo">
+    </a>
+    <div class="nav-links">
+      <a href="grafisk.html">Grafisk</a>
+      <a href="video.html">Video</a>
+      <a href="some.html">SoMe</a>
+    </div>
+  </nav>
+ 
 
-    <nav>
-      <ul>
-        <li>
-          <a href="./index.html">
-          <img src="./img/logoo.png" class="logo" alt=""/></a>
-        </li>
-        <li><a class="inav" href="./html/grafisk.html"> Grafisk </a></li>
-        <li><a class="inav" href="./html/quiz.html"> Quiz </a></li>
-        <li><a class="inav" href="./html/video.html"> Video </a></li>
-        <li><a class="inav" href="./html/some.html"> SoMe </a></li>
-      </ul>
-    </nav>
-      </ul>
-    </nav>
+  <div id="start-screen" class="screen">
+    <div class="start-wrapper">
+      <div class="start-hero">
+        <h1 class="big-title">Bleiker<br>Quizzen</h1>
+        <p class="subtitle">Test kunnskapen din om Bleiker videregående skole! 10 spørsmål fra ulike avdelinger.</p>
+      </div>
+      <div class="start-form-box">
+        <label class="input-label">DITT NAVN</label>
+        <input type="text" id="name-input" placeholder="Skriv inn navn..." maxlength="20">
+        <button id="start-btn" onclick="startQuiz()"> Start Quiz</button>
+      </div>
+      <div class="stats-row">
+        <div class="stat-card">
+          <span class="stat-number">10</span>
+          <span class="stat-label">Spørsmål</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">6</span>
+          <span class="stat-label">Avdelinger</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number"></span>
+          <span class="stat-label">Highscore</span>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+
+  <div id="quiz-screen" class="screen hidden">
+    <div class="quiz-box">
+      <div class="quiz-header">
+        <span id="question-counter">Spørsmål 1 / 10</span>
+        <span id="score-display">Poeng: 0</span>
+      </div>
+      <div class="progress-bar">
+        <div id="progress-fill"></div>
+      </div>
+      <div id="question-area">
+        <p id="category-label"></p>
+        <h2 id="question-text"></h2>
+        <div id="video-container" class="hidden">
+          <video id="quiz-video" controls>
+            <source src="../Video/bleiker-quiz.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div id="options-container"></div>
+        <div id="feedback" class="hidden"></div>
+        <button id="next-btn" class="hidden" onclick="nextQuestion()">Neste spørsmål →</button>
+      </div>
+    </div>
+  </div>
+ 
+
+  <div id="result-screen" class="screen hidden">
+    <div class="result-box">
+      <h1 id="result-title">Quiz ferdig!</h1>
+      <p id="result-score"></p>
+      <div id="highscore-list"></div>
+      <button onclick="restartQuiz()">Spill igjen</button>
+    </div>
+  </div>
+ 
+  <footer class="footer">
+    <div class="footer-left">
+      <span class="footer-brand">Bleiker Quizzen</span>
+    </div>
+    <p class="footer-copy">Laget av Aksel — © 2026 Bleiker Quizzen.</p>
+    <div class="footer-right">
+      <a href="mailto:akselgame@afk.no">akselgame@afk.no</a>
+    </div>
+  </footer>
+ 
+  <script src="../js/quiz.js"></script>
 </body>
 </html>
+ 
