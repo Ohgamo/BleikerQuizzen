@@ -65,16 +65,16 @@ body {
   display: flex;
   align-items: center;
   background: rgba(199, 199, 199, 0.128);
-  padding: 20px 32px;
+  padding: 20px 25px;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  color: #94a3b8;
-  font-size: 24px;
+  color: #c7ccd3;
+  font-size: 26px;
   line-height: 1.6;
   max-width: 500px;
   margin: 0 auto;
   margin-top: 40px;
-  margin-bottom: -30px;
+  margin-bottom: -34px;
 }
  
 .poster-section {

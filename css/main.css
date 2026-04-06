@@ -63,19 +63,21 @@ body {
 h1 {
   color: #facc15;
   font-size: 80px;
-  text-shadow: 3.5px 3.5px 2.8px black;
+  text-shadow: 3.5px 3.5px 2.8px #7a3a09;
   line-height: 1.1;
 }
 
 .card {
-  background: rgba(255,255,255,0.05);
-  padding: 20px 32px;
+  display: flex;
+  align-items: center;
+  background: rgba(199, 199, 199, 0.128);
+  padding: 20px 25px;
   border-radius: 12px;
-  border: 1px solid rgba(255,255,255,0.1);
-  max-width: 500px;
-  color: #94a3b8;
-  font-size: 22px;
+  border: 1.3px solid rgba(255, 255, 255, 0.1);
+  color: #cfd0d2;
+  font-size: 26px;
   line-height: 1.6;
+  max-width: 500px;
 }
 
 .buttons {
@@ -132,21 +134,23 @@ h1 {
 
 .promo-tag {
   color: #facc15;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
+  text-shadow: -1.2px -1.2px 0.5px #b45309;
 }
 
 .promo-text h2 {
-  font-size: 42px;
+  font-size: 45px;
   color: #fff;
   font-weight: 700;
   line-height: 1.1;
+  text-shadow: -3.5px -3.5px 0 #000000;
 }
 
 .promo-text p {
-  color: #94a3b8;
+  color: #dadadc;
   font-size: 20px;
   line-height: 1.6;
 }
@@ -154,15 +158,16 @@ h1 {
 .promo-btn {
   background: #facc15;
   border: none;
-  padding: 14px 32px;
+  padding: 14px 25px;
   border-radius: 10px;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 22px;
   cursor: pointer;
   font-family: 'Oswald', sans-serif;
   transition: 0.15s;
   width: fit-content;
   box-shadow: 0 4px 0 #b45309;
+  text-shadow: -0.7px -0.7px 0 #b45309;
 }
 
 .promo-btn:hover {
