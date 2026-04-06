@@ -7,7 +7,8 @@
 body {
   font-family: 'Oswald', sans-serif;
   min-height: 100vh;
-  background: #16263b;
+  background: radial-gradient(circle at 30% 50%, #1e3a5f, #0d1b2a 70%);
+  color: white;
 }
  
 .navbar {
@@ -233,4 +234,11 @@ body {
  
 .footer-right a:hover {
   text-decoration: underline;
+}
+ 
+.poster-img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
 }
